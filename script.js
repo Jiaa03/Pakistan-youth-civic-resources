@@ -1,17 +1,18 @@
-console.log("JavaScript is working!");
-const searchInput = document.getElementById("searchInput");
-const resources = document.querySelectorAll(".resources section");
+document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("searchInput");
+    const resources = document.querySelectorAll(".resources section");
 
-searchInput.addEventListener("input", function () {
-    const searchTerm = searchInput.value.toLowerCase();
+    searchInput.addEventListener("input", function () {
+        const searchTerm = searchInput.value.toLowerCase().trim();
 
-    resources.forEach(function (resource) {
-        const resourceText = resource.textContent.toLowerCase();
+        resources.forEach(function (resource) {
+            const resourceText = resource.textContent.toLowerCase();
 
-        if (resourceText.includes(searchTerm)) {
-            resource.style.display = "block";
-        } else {
-            resource.style.display = "none";
-        }
+            if (resourceText.includes(searchTerm)) {
+                resource.style.display = "";
+            } else {
+                resource.style.display = "none";
+            }
+        });
     });
 });
