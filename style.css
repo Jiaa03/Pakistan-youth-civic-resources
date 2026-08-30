@@ -35,6 +35,24 @@ main h2 {
     margin-bottom: 35px;
     font-size: 30px;
 }
+.search-container {
+    max-width: 600px;
+    margin: 0 auto 35px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#searchInput:focus {
+    border-color: #1f6f5b;
+}
 
 .resources {
     display: grid;
