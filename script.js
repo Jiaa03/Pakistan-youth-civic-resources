@@ -1,3 +1,4 @@
+console.log("JavaScript is working!");
 const searchInput = document.getElementById("searchInput");
 const resources = document.querySelectorAll(".resources section");
 
